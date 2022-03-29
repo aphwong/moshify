@@ -181,6 +181,19 @@ a {
   fill: var(--color-primary);
 }
 
+.icon--white {
+  fill: white;
+}
+
+.icon-container--accent {
+  background: var(--color-accent);
+}
+
+.icon--small {
+  width: 30px;
+  height: 30px;
+}
+
 /* Buttons */
 .btn {
   border-radius: 40px;
@@ -444,5 +457,39 @@ a {
 @media screen and (min-width: 1024px) {
   .grid--1x3 {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Testimonials */
+.testimonial {
+  padding: 3rem;
+}
+
+.testimonial__image {
+  position: relative;
+}
+
+.testimonial__image > img {
+  width: 100%;
+}
+
+.testimonial__image > .icon-container {
+  position: absolute;
+  top: 3rem;
+  right: -32px;
+}
+
+.card.testimonial {
+  overflow: visible;
+}
+
+@media screen and (min-width: 768px) {
+  .testimonial .quote,
+  .testimonial .quote__author {
+    font-size: 2.4rem;
+  }
+
+  .testimonial .quote {
+    margin-left: 6rem;
   }
 }
