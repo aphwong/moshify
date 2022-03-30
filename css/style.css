@@ -589,6 +589,10 @@ a {
 }
 
 /* Collapsibles */
+.collapsible {
+  margin-bottom: 2rem;
+}
+
 .collapsible__header {
   display: flex;
   justify-content: space-between;
@@ -836,4 +840,77 @@ a {
 
 .block--show-case.block--skewed-right {
   clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 90%);
+}
+
+/* Footer */
+.footer__copyright {
+  opacity: 0.8;
+}
+
+.footer .collapsible__title {
+  color: #fff;
+}
+
+.footer .list {
+  list-style: none;
+  margin: 0;
+}
+
+.footer .footer__website {
+  text-align: center;
+}
+
+.footer a {
+  color: #777;
+  font-size: 2rem;
+  transition: color 0.25s;
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer__title {
+  text-transform: uppercase;
+}
+
+.footer .collapsible {
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #393939;
+}
+
+@media screen and (min-width: 768px) {
+  .footer a,
+  .footer__copyright {
+    font-size: 1.5rem;
+  }
+
+  .footer__title {
+    font-size: 2rem;
+  }
+
+  .footer__toggler {
+    display: none;
+  }
+
+  .footer .grid {
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  }
+
+  .footer .collapsible {
+    border-bottom: 0;
+  }
+
+  .footer .footer__website {
+    order: -1;
+  }
+
+  .footer .collapsible__content {
+    max-height: 100%;
+    opacity: 1;
+  }
+  /* TODO: Considering Refactoring all img element to have 100% width for responisve image */
+  .footer img {
+    width: 100%;
+  }
 }
