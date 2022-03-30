@@ -173,9 +173,19 @@ a {
   align-items: center;
 }
 
+.icon--container--large {
+  width: 80px;
+  height: 80px;
+}
+
 .icon {
   width: 40px;
   height: 40px;
+}
+
+.icon--large {
+  width: 60px;
+  height: 60px;
 }
 
 .icon--primary {
@@ -193,6 +203,10 @@ a {
 .icon--small {
   width: 30px;
   height: 30px;
+}
+
+.icon--block {
+  display: block;
 }
 
 /* Buttons */
@@ -427,6 +441,15 @@ a {
   margin-top: 1rem;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .media__title {
+    font-size: 2rem;
+  }
+
+  .media__body {
+    font-size: 1.4rem;
+  }
+}
 /* Quotes */
 .quote {
   font-size: 3rem;
@@ -756,4 +779,40 @@ a {
 .block--plan .card {
   max-width: 50rem;
   margin: 0 auto;
+}
+
+/* Features Block */
+.feature {
+  margin: 0rem auto;
+}
+
+.feature {
+  margin: 12rem 0;
+}
+
+.feature .media {
+  flex-direction: column;
+}
+
+.feature .media__body {
+  margin: 0;
+}
+
+.feature .icon-container {
+  margin-bottom: 1rem;
+}
+
+.feature__image {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .media {
+    order: 2;
+  }
 }
