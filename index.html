@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <meta
+      name="description"
+      content="Deploy your website in less than 60 seconds."
+    />
+    <meta property="og:title" content="Moshify..." />
+    <meta property="og:description" content="Moshify..." />
+    <meta property="og:type" content="Webstie" />
+    <meta property="og:image" content="https://" />
+    <meta property="og:url" content="https://moshified.com" />
+    <title>Moshify</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +22,7 @@
     />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <header>
@@ -41,7 +51,7 @@
         <img class="hero__image" src="images/banner.png" alt="" />
       </div>
     </section>
-    <secion class="block container block-domain">
+    <section class="block container block-domain">
       <header class="block__header">
         <h2>Starting at $9 per month</h2>
         <p>
@@ -70,7 +80,7 @@
         <li>.net $10</li>
         <li>.syz $10</li>
       </ul>
-    </secion>
+    </section>
     <section class="block container block--plan">
       <div class="grid grid--1x3">
         <div class="plan">
@@ -144,7 +154,7 @@
         </p>
       </header>
       <div class="grid grid--1x2 feature">
-        <div class="media">
+        <div class="media" data-aos="fade-right">
           <span class="icon-container icon--container--large">
             <svg class="icon icon--primary icon--large">
               <use xlink:href="images/sprite.svg#easy"></use>
@@ -159,7 +169,12 @@
             <a href="#" class="link-arrow">Learn More</a>
           </div>
         </div>
-        <img class="feature__image" src="images/easy.jpg" alt="" />
+        <img
+          data-aos="zoom-in-left"
+          class="feature__image"
+          src="images/easy.jpg"
+          alt=""
+        />
       </div>
       <div class="grid grid--1x2 feature">
         <div class="media">
@@ -320,106 +335,109 @@
     </section>
     <div class="container">
       <div class="callout callout--primary callout--signup">
-      <div class="callout__description">
-        <h2 class="callout__title">Ready to get started?</h3>
-        <p class="callout__detail">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit eos
-          reprehenderit autem voluptatem architecto ipsam officiis repellat
-          quasi ipsum ducimus.
-        </p>
-      </div>
-      <div class="callout__button">
+        <div class="callout__description">
+          <h2 class="callout__title">Ready to get started?</h2>
+          <p class="callout__detail">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odit eos
+            reprehenderit autem voluptatem architecto ipsam officiis repellat
+            quasi ipsum ducimus.
+          </p>
+        </div>
+        <div class="callout__button">
           <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
         </div>
-    </div>
+      </div>
     </div>
     <footer class="block block--dark footer">
-  <div class="grid container">
-    <div class="collapsible">
-      <header class="collapsible__header">
-        <h2 class="collapsible__title footer__title">Product</h2>
-        <img
-          src="images/chevron.svg"
-          alt=""
-          class="icon icon--white collapsible__chevron footer__toggler"
-        />
-      </header>
-      <div class="collapsible__content">
-        <ul class="list footer__list">
-          <li class="list__item"><a href="#">Website Hosting</a></li>
-          <li class="list__item">
-            <a href="#">Free Automated Wordpress</a>
-          </li>
-          <li class="list__item"><a href="#">Migrations</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="collapsible">
-      <header class="collapsible__header">
-        <h2 class="collapsible__title footer__title">Company</h2>
-        <img
-          src="images/chevron.svg"
-          alt=""
-          class="icon icon--white collapsible__chevron footer__toggler"
-        />
-      </header>
-      <div class="collapsible__content">
-        <ul class="list footer__list">
-          <li class="list__item"><a href="#">About</a></li>
-          <li class="list__item">
-            <a href="#">Affiliates</a>
-          </li>
-          <li class="list__item"><a href="#">Blog</a></li>
-        </ul>
-      </div>
-    </div>
+      <div class="grid container">
+        <div class="collapsible">
+          <div class="collapsible__header">
+            <h2 class="collapsible__title footer__title">Product</h2>
+            <img
+              src="images/chevron.svg"
+              alt=""
+              class="icon icon--white collapsible__chevron footer__toggler"
+            />
+          </div>
+          <div class="collapsible__content">
+            <ul class="list footer__list">
+              <li class="list__item"><a href="#">Website Hosting</a></li>
+              <li class="list__item">
+                <a href="#">Free Automated Wordpress</a>
+              </li>
+              <li class="list__item"><a href="#">Migrations</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="collapsible">
+          <div class="collapsible__header">
+            <h2 class="collapsible__title footer__title">Company</h2>
+            <img
+              src="images/chevron.svg"
+              alt=""
+              class="icon icon--white collapsible__chevron footer__toggler"
+            />
+          </div>
+          <div class="collapsible__content">
+            <ul class="list footer__list">
+              <li class="list__item"><a href="#">About</a></li>
+              <li class="list__item">
+                <a href="#">Affiliates</a>
+              </li>
+              <li class="list__item"><a href="#">Blog</a></li>
+            </ul>
+          </div>
+        </div>
 
-    <div class="collapsible">
-      <header class="collapsible__header">
-        <h2 class="collapsible__title footer__title">SUPPORT</h2>
-        <img
-          src="images/chevron.svg"
-          alt=""
-          class="icon icon--white collapsible__chevron footer__toggler"
-        />
-      </header>
-      <div class="collapsible__content">
-        <ul class="list footer__list">
-          <li class="list__item"><a href="#">Contact</a></li>
-          <li class="list__item">
-            <a href="#">Knowledge Base</a>
-          </li>
-          <li class="list__item"><a href="#">FAQ</a></li>
-        </ul>
-      </div>
-    </div>
+        <div class="collapsible">
+          <div class="collapsible__header">
+            <h2 class="collapsible__title footer__title">SUPPORT</h2>
+            <img
+              src="images/chevron.svg"
+              alt=""
+              class="icon icon--white collapsible__chevron footer__toggler"
+            />
+          </div>
+          <div class="collapsible__content">
+            <ul class="list footer__list">
+              <li class="list__item"><a href="#">Contact</a></li>
+              <li class="list__item">
+                <a href="#">Knowledge Base</a>
+              </li>
+              <li class="list__item"><a href="#">FAQ</a></li>
+            </ul>
+          </div>
+        </div>
 
-    <div class="collapsible">
-      <header class="collapsible__header">
-        <h2 class="collapsible__title footer__title">Domains</h2>
-        <img
-          src="images/chevron.svg"
-          alt=""
-          class="icon icon--white collapsible__chevron footer__toggler"
-        />
-      </header>
-      <div class="collapsible__content">
-        <ul class="list footer__list">
-          <li class="list__item"><a href="#">Domain Checker</a></li>
-          <li class="list__item">
-            <a href="#">Domain Transfer</a>
-          </li>
-          <li class="list__item"><a href="#">Free Domain</a></li>
-        </ul>
+        <div class="collapsible">
+          <div class="collapsible__header">
+            <h2 class="collapsible__title footer__title">Domains</h2>
+            <img
+              src="images/chevron.svg"
+              alt=""
+              class="icon icon--white collapsible__chevron footer__toggler"
+            />
+          </div>
+          <div class="collapsible__content">
+            <ul class="list footer__list">
+              <li class="list__item"><a href="#">Domain Checker</a></li>
+              <li class="list__item">
+                <a href="#">Domain Transfer</a>
+              </li>
+              <li class="list__item"><a href="#">Free Domain</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__website">
+          <img src="images/logo.png" alt="" />
+          <p class="footer__copyright">Copyright &copy; 2020 Mosh Hamedani</p>
+        </div>
       </div>
-    </div>
-    <div class="footer__website">
-      <img src="images/logo.png" alt="" />
-      <p class="footer__copyright">Copyright &copy; 2020 Mosh Hamedani</p>
-    </div>
-  </div>
-</footer>
-
+    </footer>
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
