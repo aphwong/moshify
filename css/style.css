@@ -308,6 +308,7 @@ a {
   border: 0;
   flex-grow: 1;
   padding: 1.5rem 2rem;
+  width: 0;
 }
 
 .input-group .btn {
@@ -524,6 +525,7 @@ a {
 
 .testimonial__image {
   position: relative;
+  margin: 0 3rem;
 }
 
 .testimonial__image > img {
@@ -534,6 +536,11 @@ a {
   position: absolute;
   top: 3rem;
   right: -32px;
+}
+
+.testimonial .quote {
+  margin: 2rem 0;
+  font-size: 110%;
 }
 
 .card.testimonial {
@@ -554,7 +561,6 @@ a {
 /* Callouts */
 .callout {
   border-radius: 10px;
-  border: 1px solid #000;
   padding: 4rem;
   display: flex;
   flex-direction: column;
@@ -581,6 +587,10 @@ a {
   margin-left: 3rem;
 }
 
+.callout--signup {
+  transform: translateY(5rem);
+}
+
 @media screen and (min-width: 768px) {
   .callout {
     flex-direction: row;
@@ -589,10 +599,6 @@ a {
 }
 
 /* Collapsibles */
-.collapsible {
-  margin-bottom: 2rem;
-}
-
 .collapsible__header {
   display: flex;
   justify-content: space-between;
@@ -843,6 +849,10 @@ a {
 }
 
 /* Footer */
+.footer {
+  padding-top: 10rem;
+}
+
 .footer__copyright {
   opacity: 0.8;
 }
@@ -877,6 +887,7 @@ a {
 .footer .collapsible {
   padding-bottom: 1.5rem;
   border-bottom: 1px solid #393939;
+  margin-bottom: 2rem;
 }
 
 @media screen and (min-width: 768px) {
