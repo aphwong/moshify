@@ -124,9 +124,9 @@ a {
 }
 
 @media screen and (min-width: 1024px) {
-  .badge {
+  /* .badge {
     font-size: 1.5rem;
-  }
+  } */
 
   .badge-small {
     font-size: 1.2rem;
@@ -768,7 +768,7 @@ a {
 
 .block-domain__prices {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 6rem);
   font-size: 2rem;
   font-weight: 600;
